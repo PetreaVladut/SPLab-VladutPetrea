@@ -1,17 +1,29 @@
 package Library;
 
 public class Author {
-    private String author;
-    public Author(String author) {
-        this.author = author;
+    private String name;
+    private String surname;
+    public Author(String name) {
+        String[] s = new String[2];
+        s = name.split(" ");
+        this.name = s[0];
+        this.surname = s[1];
     }
     public String getAuthor() {
-        return author;
+        return name;
     }
-    public void setAuthor(String author) {
-        this.author = author;
+    public void setAuthor(String name) {
+        this.name = name;
     }
     public void print(){
-        System.out.println("Author(s): " + author);
+        System.out.print(name);
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }
