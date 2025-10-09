@@ -4,15 +4,25 @@ import java.util.Arrays;
 
 public class Book {
     private String title;
-    private String[] author;
+    private Author[] author;
     private int NrOfAuthors;
-    public Book(Author[] author, String title){
+    /*public Book(Author[] author, String title){
     this.title = title;
     NrOfAuthors = author.length;
-    this.author = new String[NrOfAuthors];
+    this.author = new Author[NrOfAuthors];
     for (int i = 0; i < NrOfAuthors; i++) {
-        this.author[i]= String.valueOf(author[i]);
+        this.author[i]= author[i];
     }
+    }*/
+    public Book(String title){
+        this.title = title;
+    }
+
+    public void addAuthor(Author author){
+        if(this.author == null){
+            this.author = new Author[1];
+        }
+        this.author[NrOfAuthors++] = author;
     }
 
     public String getTitle() {
@@ -23,10 +33,10 @@ public class Book {
         this.title = title;
     }
 
-    public String[] getAuthor() {
+    public Author[] getAuthor() {
         return author;
     }
-    public void setAuthor(String[] author) {
+    public void setAuthor(Author[] author) {
         this.author = author;
     }
     public int getNrOfAuthors() {
@@ -37,6 +47,9 @@ public class Book {
     }
     public void print(){
         System.out.println("Title: " + title);
-        System.out.println("Author(s): " + Arrays.toString(author));
+        System.out.println("Author(s): ");
+        for (int i = 0; i < NrOfAuthors; i++) {
+            author[i].print();
+        }
     }
 }
