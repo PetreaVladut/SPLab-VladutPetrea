@@ -1,7 +1,4 @@
 package Library;
 
-public class TableOfContents {
-    public void print(){
-
-    }
+public class TableOfContents implements Element {
 }
