@@ -52,4 +52,12 @@ public class Book {
             author[i].print();
         }
     }
+    public void addContent(Element content){
+        if(content instanceof Section){
+            Section section = (Section) content;
+        }
+        else if(content instanceof Book){
+
+        }
+    }
 }
