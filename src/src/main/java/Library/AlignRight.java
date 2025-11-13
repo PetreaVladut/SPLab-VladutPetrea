@@ -1,4 +1,4 @@
-package Library;
+package java.Library;
 
 public class AlignRight extends AlignStrategy{
     AlignRight(){

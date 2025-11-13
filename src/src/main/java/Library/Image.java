@@ -1,4 +1,4 @@
-package Library;
+package java.Library;
 
 public class Image implements Element {
 private String name;

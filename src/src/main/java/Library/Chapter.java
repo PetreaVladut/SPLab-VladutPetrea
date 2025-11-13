@@ -1,4 +1,4 @@
-package Library;
+package java.Library;
 
 public class Chapter {
     private String name;
