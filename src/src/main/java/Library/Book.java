@@ -1,6 +1,4 @@
-package Library;
-
-import java.util.Arrays;
+package java.Library;
 
 public class Book {
     private String title;

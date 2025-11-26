@@ -1,4 +1,4 @@
-package Library;
+package java.Library;
 
 public class Paragraph implements Element {
     public String name;
