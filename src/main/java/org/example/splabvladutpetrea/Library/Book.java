@@ -58,4 +58,12 @@ public class Book {
 
         }
     }
+
+    public Long getId() {
+        return 0L;
+    }
+
+    public void setId(long l) {
+
+    }
 }
