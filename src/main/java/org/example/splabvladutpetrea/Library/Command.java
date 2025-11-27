@@ -1,5 +1,5 @@
 package org.example.splabvladutpetrea.Library;
 
-public class SubSection implements Element {
-
+public interface Command<T> {
+    T execute();
 }
